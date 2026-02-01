@@ -1,7 +1,11 @@
+import os
+import sys
 import socket
 import time
 from bedray_lib.utils import BinaryStream
 from bedray_lib.raknet import RakNetPacket
+
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 def start_bedray_ai():
     # 1. Cấu hình địa chỉ server
