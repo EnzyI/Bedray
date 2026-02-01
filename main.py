@@ -5,7 +5,9 @@ import time
 from bedray_lib.utils import BinaryStream
 from bedray_lib.raknet import RakNetPacket
 
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+current_dir = os.path.dirname(os.path.abspath(__file__))
+# Thêm nó vào danh sách tìm kiếm của Python
+sys.path.append(current_dir)
 
 def start_bedray_ai():
     # 1. Cấu hình địa chỉ server
